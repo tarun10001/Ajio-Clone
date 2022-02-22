@@ -10,8 +10,26 @@
   <body>
     <div id="naz-nav-container"></div>
     <div id="naz-content-container">
-      <div id="naz-sidebar"></div>
+      <div id="naz-sidebar">
+        <p id="naz-side-head">Refine By</p>
+        <p id="naz-side-gender">
+          <span><i class="fa-solid fa-minus fa-lg"></i></span> Gender
+        </p>
+        <input type="checkbox" value="male" id="filterGender" />
+        <span>Male</span>
+      </div>
       <div id="naz-product-container"></div>
+      <!-- Sort By Price -->
+      <div id="naz-sort-products">
+        <span id="naz-sort-text">SORT BY</span>
+        <select name="sort" id="naz-sort-products-option">
+          <option value="Relevence">Relevence</option>
+          <option value="Discount">Discount</option>
+          <option value="hightolow">Price (highest first)</option>
+          <option value="lowtohigh">Price (lowest first)</option>
+        </select>
+        <!-- Sort By Price Ends -->
+      </div>
     </div>
   </body>
 </html>

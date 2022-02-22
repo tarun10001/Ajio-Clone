@@ -1,7 +1,102 @@
-/* Product Styles */
+/* Temp Style */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Sort Style */
+#naz-sort-products-option {
+  padding: 5px;
+}
+
+#naz-sort-text {
+  margin: 5px;
+  color: gray;
+}
+
+/* layout Styles */
+#naz-content-container {
+  display: flex;
+  margin: 5rem 0;
+}
+
+#naz-sidebar {
+  width: 25%;
+  background-color: whitesmoke;
+}
+
+#naz-product-container {
+  width: 70%;
+}
+
+/* Sidebar Styles */
+#naz-sidebar {
+  padding-top: 5rem;
+  text-align: center;
+}
+
+#naz-side-head {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Product Styles */
 #naz-product-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+
+.naz-product {
+  margin: 1.5rem 0;
+}
+
+.naz-product-brand {
+  color: rosybrown;
+  font-weight: bold;
+  text-align: center;
+  padding: 25px 0 0 0;
+}
+
+.naz-product-title {
+  text-align: center;
+}
+
+.naz-price-container {
+  display: flex;
+  justify-content: center;
+}
+
+.naz-price,
+.naz-striked-price,
+.naz-offer {
+  margin: 5px;
+}
+
+.naz-price {
+  font-weight: bold;
+}
+
+.naz-striked-price {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.naz-offer {
+  color: rosybrown;
+}
+
+.naz-product-img {
+  width: 370px;
+}
+
+.naz-product-img:hover {
+  transform: scale(1.1);
+  border: 2px solid;
+  border-radius: 5px;
 }
