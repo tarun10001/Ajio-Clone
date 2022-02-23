@@ -4,6 +4,9 @@ let data = JSON.parse(localStorage.getItem("mensData"));
 //Importing renderProducts function
 import renderProducts from "./renderProducts.js";
 
+// Importing sidebar-filter
+import sidebar from "../components/sidebar-filter.js";
+
 renderProducts(data);
 
 //Sort functionality
@@ -27,3 +30,7 @@ function sortByPrice() {
         renderProducts(data);
     }
 }
+
+// Sidebar Filter
+let sidebar_container = document.getElementById("naz-sidebar");
+sidebar_container.innerHTML = sidebar();
