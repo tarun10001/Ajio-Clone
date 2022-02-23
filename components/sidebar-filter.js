@@ -1,11 +1,10 @@
 function sidebar() {
     return `
   <div id="mobile-filter">
-    <p class="pl-sm-0 pl-2">Home | <b>All Products</b></p>
-    <div class="border-bottom pb-2 ml-2">
+    <div>
       <h4 id="burgundy">Refine By</h4>
     </div>
-    <div class="py-2 border-bottom ml-3">
+    <div class="py-1 border-bottom ml-3">
       <h6 class="font-weight-bold">Gender</h6>
       <div id="orange"><span class="fa fa-minus"></span></div>
       <form>
@@ -61,6 +60,7 @@ function sidebar() {
         </div>
       </form>
     </div>
+    <button id="filterButton">Filter</button>
   </div>`;
 }
 
