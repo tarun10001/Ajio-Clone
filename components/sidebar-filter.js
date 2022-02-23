@@ -9,16 +9,16 @@ function sidebar() {
       <div id="orange"><span class="fa fa-minus"></span></div>
       <form>
         <div class="form-group">
-          <input type="checkbox" id="artisan" />
-          <label for="artisan">Men Styles</label>
+          <input type="checkbox" id="menFilter" />
+          <label for="menFilter">Men Styles</label>
         </div>
         <div class="form-group">
-          <input type="checkbox" id="breakfast" />
-          <label for="breakfast">Women Styles</label>
+          <input type="checkbox" id="womenFilter" />
+          <label for="womenFilter">Women Styles</label>
         </div>
         <div class="form-group">
-          <input type="checkbox" id="healthy" />
-          <label for="healthy">Kids Styles</label>
+          <input type="checkbox" id="kidsFilter" />
+          <label for="kidsFilter">Kids Styles</label>
         </div>
       </form>
     </div>
@@ -63,5 +63,6 @@ function sidebar() {
     <button id="filterButton">Filter</button>
   </div>`;
 }
+
 
 export default sidebar;

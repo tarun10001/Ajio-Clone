@@ -34,3 +34,21 @@ function sortByPrice() {
 // Sidebar Filter
 let sidebar_container = document.getElementById("naz-sidebar");
 sidebar_container.innerHTML = sidebar();
+
+//Filter Products
+let button = document
+    .getElementById("filterButton")
+    .addEventListener("click", filterProducts);
+function filterProducts() {
+
+    // Filtering Based On Gender
+    let menFilter = document.getElementById("menFilter");
+    let kidFilter = document.getElementById("kidsFilter");
+    if(menFilter.checked == true)
+        window.location.href = "./menStyles.html";
+
+    if(kidFilter.checked == true)
+        window.location.href = "./kidsStyles.html"
+
+    
+}
