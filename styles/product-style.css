@@ -9,25 +9,16 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Sort Style */
-#naz-sort-products-option {
-  padding: 5px;
-}
-
-#naz-sort-text {
-  margin: 5px;
-  color: gray;
-}
-
 /* layout Styles */
 #naz-content-container {
   display: flex;
-  margin: 5rem 0;
+  margin: 2rem 0;
 }
 
 #naz-sidebar {
   width: 25%;
   background-color: whitesmoke;
+  font-size: 1.2rem;
 }
 
 #naz-product-container {
@@ -36,13 +27,7 @@ body {
 
 /* Sidebar Styles */
 #naz-sidebar {
-  padding-top: 5rem;
   text-align: center;
-}
-
-#naz-side-head {
-  font-size: 1.5rem;
-  font-weight: bold;
 }
 
 /* Product Styles */
@@ -99,4 +84,18 @@ body {
   transform: scale(1.1);
   border: 2px solid;
   border-radius: 5px;
+}
+
+/* Product Style for Smaller Screens */
+@media only screen and (max-width: 1200px) {
+  #naz-sidebar {
+    display: none;
+  }
+  #naz-product-container {
+    justify-content: space-between;
+    margin: 0 2rem;
+  }
+  #naz-sort-products {
+    margin: 0 1rem;
+  }
 }

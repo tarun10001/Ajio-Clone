@@ -10,18 +10,93 @@
       src="https://kit.fontawesome.com/b5e607be6d.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Try -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
   </head>
   <body>
     <div id="naz-nav-container"></div>
     <div id="naz-content-container">
+      <!-- Sidebar -->
       <div id="naz-sidebar">
-        <p id="naz-side-head">Refine By</p>
-        <p id="naz-side-gender">
-          <span><i class="fa-solid fa-minus fa-lg"></i></span> Gender
-        </p>
-        <input type="checkbox" value="male" id="filterGender" />
-        <span>Male</span>
+        <div class="filter">
+          <button
+            class="btn btn-default"
+            type="button"
+            data-toggle="collapse"
+            data-target="#mobile-filter"
+            aria-expanded="true"
+            aria-controls="mobile-filter"
+          >
+            Filters<span class="fa fa-filter pl-1"></span>
+          </button>
+        </div>
+        <div id="mobile-filter">
+          <p class="pl-sm-0 pl-2">Home | <b>All Products</b></p>
+          <div class="border-bottom pb-2 ml-2">
+            <h4 id="burgundy">Refine By</h4>
+          </div>
+          <div class="py-2 border-bottom ml-3">
+            <h6 class="font-weight-bold">Gender</h6>
+            <div id="orange"><span class="fa fa-minus"></span></div>
+            <form>
+              <div class="form-group">
+                <input type="checkbox" id="artisan" />
+                <label for="artisan">Men Styles</label>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" id="breakfast" />
+                <label for="breakfast">Women Styles</label>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" id="healthy" />
+                <label for="healthy">Kids Styles</label>
+              </div>
+            </form>
+          </div>
+          <div class="py-2 border-bottom ml-3">
+            <h6 class="font-weight-bold">Category</h6>
+            <div id="orange"><span class="fa fa-minus"></span></div>
+            <form>
+              <div class="form-group">
+                <input type="checkbox" id="tea" />
+                <label for="tea">Shirts</label>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" id="cookies" />
+                <label for="cookies">T-Shirts</label>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" id="pastries" />
+                <label for="pastries">Jackets</label>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" id="dough" />
+                <label for="dough">Trousers</label>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" id="choco" />
+                <label for="choco">Shorts</label>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" id="choco" />
+                <label for="choco">Tops</label>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" id="choco" />
+                <label for="choco">Kurtas</label>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" id="choco" />
+                <label for="choco">Saree</label>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
+      <!-- Product Container -->
       <div id="naz-product-container"></div>
       <!-- Sort By Price -->
       <div id="naz-sort-products">
