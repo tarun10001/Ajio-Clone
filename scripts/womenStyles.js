@@ -43,12 +43,94 @@ function filterProducts() {
 
     // Filtering Based On Gender
     let menFilter = document.getElementById("menFilter");
+    let womenFilter = document.getElementById("womenFilter");
     let kidFilter = document.getElementById("kidsFilter");
+
     if(menFilter.checked == true)
         window.location.href = "./menStyles.html";
+    
+    if(womenFilter.checked == true)
+        window.location.href = "./womenStyles.html";
 
     if(kidFilter.checked == true)
         window.location.href = "./kidsStyles.html"
-
     
+    // Filtering based on Categories
+    let shirtFilter = document.getElementById("shirtFilter");
+    let tshirtFilter = document.getElementById("tshirtFilter");
+    let jacketFilter = document.getElementById("jacketFilter");
+    let trouserFilter = document.getElementById("trouserFilter");
+    let shortsFilter = document.getElementById("shortsFilter");
+    let topsFilter = document.getElementById("topsFilter");
+    let kurtasFilter = document.getElementById("kurtasFilter");
+    let sareeFilter = document.getElementById("sareeFilter");
+
+    let mensData = JSON.parse(localStorage.getItem("mensData"));
+    let womensData = JSON.parse(localStorage.getItem("womensData"));
+    let kidsData = JSON.parse(localStorage.getItem("kidsData"));
+
+
+    if(shirtFilter.checked == true)
+    {
+        let filterList = mensData.filter(function (elem) {
+            return elem.category == "shirt";
+        });
+        renderProducts(filterList);
+    }
+
+    if(tshirtFilter.checked == true)
+    {
+        let filterList = mensData.filter(function (elem) {
+            return elem.category == "tshirt";
+        });
+        renderProducts(filterList);
+    }
+
+    if(jacketFilter.checked == true)
+    {
+        let filterList = mensData.filter(function (elem) {
+            return elem.category == "jacket";
+        });
+        renderProducts(filterList);
+    }
+
+    if(trouserFilter.checked == true)
+    {
+        let filterList = mensData.filter(function (elem) {
+            return elem.category == "pants";
+        });
+        renderProducts(filterList);
+    }
+
+    if(shortsFilter.checked == true)
+    {
+        let filterList = mensData.filter(function (elem) {
+            return elem.category == "shorts";
+        });
+        renderProducts(filterList);
+    }
+
+    if(topsFilter.checked == true)
+    {
+        let filterList = womensData.filter(function (elem) {
+            return elem.category == "top";
+        });
+        renderProducts(filterList);
+    }
+
+    if(kurtasFilter.checked == true)
+    {
+        let filterList = womensData.filter(function (elem) {
+            return elem.category == "kurta";
+        });
+        renderProducts(filterList);
+    }
+
+    if(sareeFilter.checked == true)
+    {
+        let filterList = womensData.filter(function (elem) {
+            return elem.category == "saree";
+        });
+        renderProducts(filterList);
+    }  
 }

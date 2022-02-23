@@ -27,36 +27,36 @@ function sidebar() {
       <div id="orange"><span class="fa fa-minus"></span></div>
       <form>
         <div class="form-group">
-          <input type="checkbox" id="tea" />
-          <label for="tea">Shirts</label>
+          <input type="checkbox" id="shirtFilter" />
+          <label for="shirtFilter">Shirts</label>
         </div>
         <div class="form-group">
-          <input type="checkbox" id="cookies" />
-          <label for="cookies">T-Shirts</label>
+          <input type="checkbox" id="tshirtFilter" />
+          <label for="tshirtFilter">T-Shirts</label>
         </div>
         <div class="form-group">
-          <input type="checkbox" id="pastries" />
-          <label for="pastries">Jackets</label>
+          <input type="checkbox" id="jacketFilter" />
+          <label for="jacketFilter">Jackets</label>
         </div>
         <div class="form-group">
-          <input type="checkbox" id="dough" />
-          <label for="dough">Trousers</label>
+          <input type="checkbox" id="trouserFilter" />
+          <label for="trouserFilter">Trousers</label>
         </div>
         <div class="form-group">
-          <input type="checkbox" id="choco" />
-          <label for="choco">Shorts</label>
+          <input type="checkbox" id="shortsFilter" />
+          <label for="shortsFilter">Shorts</label>
         </div>
         <div class="form-group">
-          <input type="checkbox" id="choco" />
-          <label for="choco">Tops</label>
+          <input type="checkbox" id="topsFilter" />
+          <label for="topsFilter">Tops</label>
         </div>
         <div class="form-group">
-          <input type="checkbox" id="choco" />
-          <label for="choco">Kurtas</label>
+          <input type="checkbox" id="kurtasFilter" />
+          <label for="kurtasFilter">Kurtas</label>
         </div>
         <div class="form-group">
-          <input type="checkbox" id="choco" />
-          <label for="choco">Saree</label>
+          <input type="checkbox" id="sareeFilter" />
+          <label for="sareeFilter">Saree</label>
         </div>
       </form>
     </div>
