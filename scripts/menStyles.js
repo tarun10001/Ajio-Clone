@@ -134,3 +134,14 @@ function filterProducts() {
         renderProducts(filterList);
     }
 }
+
+
+// Importing Navbar
+import navbar from "../components/navbar.js";
+let nav_container = document.getElementById("naz-nav-container");
+nav_container.innerHTML = navbar();
+
+//Importing Footer
+import footer from "../components/footer.js"
+let footer_container = document.getElementById("naz-footer-container");
+footer_container.innerHTML = footer();
