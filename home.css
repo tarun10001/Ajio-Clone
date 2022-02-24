@@ -1,0 +1,163 @@
+#sildeshow1>img {
+    width: 100%;
+    height: 60%;
+}
+img{
+    width: 100%;
+}
+#top_deals_of_end_images {
+    display: flex;
+    gap: 10px;
+    transition: 0.5s;
+}
+#top_deals_of_end{
+    transition: 0.5s;
+}
+#top_deals_of_end:hover{
+    transform: scale(1.1);
+}
+
+#top_deals_of_end_images>img {
+    width: 25%;
+    transition: 0.5s;
+}
+#top_deals_of_end_images>img:hover{
+    transform:scale(1.03)
+}
+#far_brands:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+#fresh_season >img:hover{
+    transition: 0.5s;
+    transform: scale(1.03);
+}
+#bag_it > img:hover{
+    transition: 0.5s;
+    transform: scale(1.03);
+}
+#our_exclusive:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+#trends > img:hover{
+    margin-top: 10px;
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+#fall_in_love > img:hover{
+    transition: 0.5s;
+    transform: scale(1.03);
+}
+#images_grid > img:hover{
+    transition: 0.5s;
+    transform: scale(1.03);
+}
+#best_of_international:hover{
+    transition: 0.5s;
+    transform: scale(1.03);
+}
+#best_of_internantional_images > img:hover{
+    transition: 0.8s;
+    transform: scale(1.03);
+}
+#your_five_brands:hover{
+    transition: 0.8s;
+    transform: scale(1.03);
+}
+#your_five_brands_img > img:hover{
+    transition: 0.8s;
+    transform: scale(1.03);
+}
+#exclusively_yours:hover{
+    transition: 0.8s;
+    transform: scale(1.03);
+}
+#ensembles:hover{
+    transition: 0.8s;
+    transform: scale(1.03);
+}
+#ensembles_img > img:hover{
+    transition: 0.8s;
+    transform: scale(1.03);
+}
+#the_best:hover, #the_best_img > img:hover {
+    transition: 0.8s;
+    transform: scale(1.03);
+}
+#beauty_packs:hover, #beauty_packs_img > img:hover{
+    transition: 0.8s;
+    transform: scale(1.03);
+}
+#discover_online:hover, #discover_online_img > img:hover,#discover_online_img2 > img:hover,#discover_online_img3>img:hover{
+    transition: 0.8s;
+    transform: scale(1.03);
+}
+#styles_celebs:hover, #styles_celebs_img > img:hover{
+    transition: 0.8s;
+    transform: scale(1.03);
+}
+#top_brands_on_dis:hover, #top_brands_on_dis_img > img:hover, #top_brands_on_dis_img2 > img:hover{
+    transition: 0.8s;
+    transform: scale(1.03);
+}
+#cashback{
+    display: flex;
+    transition: 0.5s;
+}
+#cashback :hover{
+    transform: scale(1.1)
+}
+#images_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#best_of_internantional_images{
+    display: flex;
+} 
+ #your_five_brands_img{
+    display: flex; 
+}
+#ensembles_img{
+    display: flex;
+} 
+ #the_best_img{
+    display: flex;
+ }
+#beauty_packs_img{
+    display: flex;
+}
+#discover_online_img2{
+    display: flex;
+}
+#discover_online_img3{
+    display: flex;
+} 
+ #styles_celebs_img{
+    display: flex;
+}
+#top_brands_on_dis_img{
+    display: flex;
+}
+#top_brands_on_dis_img2{
+    display: flex;
+}
+#feet_uring_img{
+    display: flex;
+}
+#comfort_img{
+    display: flex;
+}
+#perfect_plus_img{
+    display: flex;
+}
+#stylish_img{
+    display: flex;
+}
+#stylish_home_edit_img{
+    display: flex;
+}
+#new_deals_img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
