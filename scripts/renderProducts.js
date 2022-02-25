@@ -37,11 +37,16 @@ function renderProducts(data) {
         price_container.append(price,strikedPrice,offer);
         product.append(poster, brand, title,price_container);
 
-        product.addEventListener("click",()=>{
-            localStorage.setItem("currentProduct",JSON.stringify(elem));
-        })
-
         parent.append(product);
+
+
+
+
+
+        poster.addEventListener("click",function(){
+            addToCart(elem);
+   });
+        
     });
 }
 

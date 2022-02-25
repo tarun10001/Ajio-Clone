@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon"
+    href="https://is2-ssl.mzstatic.com/image/thumb/Purple116/v4/ec/95/cf/ec95cf46-eafc-e543-a9a2-98cbfe48bccb/AppIcon-0-0-1x_U007emarketing-0-0-0-9-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1024x1024bb.png"
+    type="image/x-icon">
+    <script src="https://kit.fontawesome.com/f214957bb7.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
+
+
+      #words {
+        color: rgb(168, 164, 164);
+        display: flex;
+        gap: 2%;
+        font-size:20px;
+      }
+
+      #main_container {
+        display: flex;
+        height: 600px;
+        margin-top: 2%;
+      }
+
+      .left_container {
+        /* border: 1px solid red; */
+        width: 50%;
+      }
+      .left_container img {
+        width: 60%;
+        margin-left: 23%;
+      }
+      .right_container {
+        /* border: 1px solid red; */
+        width: 50%;
+      }
+
+      .right_content {
+        text-align: center;
+        color: black;
+        margin: 2%;
+        text-transform: capitalize;
+      }
+
+      #brand {
+        color: #b1997e;
+      }
+
+      #main_box {
+        width: 70%;
+        text-align: left;
+        font-size: 15px;
+        margin: auto;
+        margin-top: 1%;
+      }
+
+      .main_box1 {
+        border: 1px solid rgb(223, 217, 217);
+        width: 50%;
+        margin: auto;
+      }
+
+      .main_box2 {
+        border: 1px solid rgb(207, 199, 199);
+        width: 50%;
+        margin: auto;
+        margin-top: -0.2%;
+        color: rgb(172, 162, 162);
+      }
+      .more {
+        color: blue;
+        font-size: 15px;
+        text-decoration: underline;
+        text-align: center;
+      }
+      .more > p {
+        color: rgb(7, 6, 6);
+      }
+
+      .location {
+        text-align: center;
+        font-size: 12px;
+      }
+
+      .button {
+        width: 40%;
+        margin: auto;
+      }
+
+      .btn1 {
+        width: 100%;
+        height: 50px;
+        margin: auto;
+        background-color: #d5a249;
+        border: 1px solid #d5a249;
+        color: white;
+        letter-spacing: 2px;
+        cursor: pointer;
+      }
+
+      .btn1:hover,
+      .btn2:hover {
+        outline: 1px solid transparent;
+        border: 3px solid #464641;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .btn2 {
+        width: 100%;
+        height: 50px;
+        margin: auto;
+        border: 1px solid #d5a249;
+        color: #d5a249;
+        letter-spacing: 2px;
+        cursor: pointer;
+      }
+
+      h6 {
+        color: grey;
+        text-align: center;
+      }
+      div .brand1 {
+        font-size:20px;
+      }
+
+      .sizes {
+        display: flex;
+        color: grey;
+        /* border: 1px solid #D5A249; */
+        width: 40%;
+        margin: auto;
+        justify-content: space-between;
+        height: 22px;
+      }
+
+      .size_small {
+        background-color: rgb(85, 85, 99);
+        width: 8%;
+        border-radius: 50%;
+        color: white;
+        padding-left: 4%;
+      }
+      h4{
+        text-decoration: line-through;
+        color:grey;
+      }
+      h3 {
+        color:rgb(160, 118, 94);
+      }
+
+
+
+  /* NAVBAR design */
+
+  #navbar{
+        height:72px;
+        width:100%;
+        border-top: 3px solid rgb(47,66,84);
+        display: flex;
+        /* justify-content: space-around; */
+
+    }
+    #navbar-left{
+        height:65px;
+        width:25%;
+        border:1px solid transparent;
+        margin-left: 80px;
+
+    }
+    #navbar-right{
+        height:100%;
+        width:60%;
+        border:1px solid transparent;
+        margin-right: 50px;
+        margin-left: 50px;
+        
+
+    }
+    #right-upper{
+        height:50% ;
+        width:100%;
+        border:1px solid transparent;
+        display:flex;
+        justify-content: right;
+        gap:22px;
+        align-items: center;
+    }
+    #right-upper:hover{
+        cursor: pointer;
+    }
+    #right-lower{
+        height:50% ;
+        width:100%;
+        border:1px solid transparent;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: sans-serif;
+        font-size: 14px;
+        color:rgb(106,106,106);
+        margin-top: 3px;
+    }
+    #rl:hover{
+        font-weight: bold;
+        cursor: pointer;
+    }
+    #site-logo{
+        height:100%;
+        width:35%;
+        margin-left: 60px;
+    }
+    #navbar-button{
+        height:100%;
+        background-color: black;
+        color:white;
+        font-size: 12px;
+        font-family: sans-serif;
+        margin-right: 30px;
+        cursor: pointer;
+       
+    }
+    #navbar-input{
+        border-radius: 15px;
+        width: 250px;
+        height:25px;
+
+    }
+    #ru{
+        font-size: 12px;
+        color:rgb(106,106,106);
+        text-decoration: none;
+        font-family: sans-serif;
+    }
+    #navbar-image{
+        height:100px;
+        width:100%;
+        border:1px solid transparent;
+        margin-top: 10px;
+        
+    }
+    #navbar-img{
+        height:100%;
+        width:100%;
+    }
+    #bar-img{
+        height:100%;
+        width:4%;
+        cursor: pointer;
+        background-color: rgb(47,66,84);
+        color: white;
+    }
+
+
+
+/* FOOTER Design */
+.footer {
+    text-transform: uppercase;
+    background-color: rgb(44, 65, 82);
+    box-sizing: border-box;
+    padding: 70px 70px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    border-top: gray;
+    text-align: justify;
+    margin-top: 5%;
+    
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 20%;
+    padding: 0 30px;
+}
+
+.footer-col h4 {
+    font-size: 13px;
+    color: rgb(255,255,255);
+    margin-bottom: 35px;
+    font-weight: bolder;
+    position: relative;
+    margin-left: 38px;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.footer-col ul li a {
+    font-size: 11px;
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(255,255,255);
+    display: block;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    padding-left: 8px;
+}
+
+.social-links a {
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    line-height: 40px;
+    border-radius: 15%;
+    color: #222;
+    transition: all 0.5s ease;
+
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+#first-right {
+    height: 100%;
+    width: 25%;
+    /* font-size: 11px; */
+    color: rgb(104, 101, 101);
+}
+
+.right {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    text-align: left;
+}
+
+.right>p {
+    font-family: HCoGothamSSmLight, Arial, Sans-Serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border-left: 1px solid gray;
+    padding-left: 10px;
+    color: gray;
+}
+
+#bottom-footer{
+    height: 140px;
+    width: 100%;
+    background-color: rgb(44, 65, 82);
+    justify-content: space-between;
+    display: flex;
+    
+}
+#main{
+    /* font-size: 14px; */
+
+    width: 40%;
+    margin-left: 110px;
+    margin-top: 30px;
+    color: rgb(255,255,255);
+    
+}
+
+#btm-left{
+    font-size: 14px;
+    margin: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+}
+#btm-right{
+    margin-top: 32px;
+    color: rgb(255,255,255);
+    margin-right: 110px;
+}
+#f-btns{
+    display: grid;
+    text-align: center;
+   margin-top: 18px;
+    height: 110px;
+    width: 55px;
+    margin-right: 45px;
+    grid-gap: 5px;
+
+}
+#foot-btn{
+  
+    background-color: #ffffff;
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#foot-btn1{
+    background-color: #ffffff;
+    font-size: 35px;
+    height: 44px;
+    width: 44px;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+
+    </style>
+  </head>
+
+  <body>
+
+<!-- NAVBAR content -->
+
+<div id="navbar">
+  <div id="navbar-left">
+      <img id="site-logo" src="https://assets.ajio.com/static/img/Ajio-Logo.svg" alt="">
+  </div>
+  <div id="navbar-right">
+      <div id="right-upper">
+          <a href=""><p id="ru">Sign In / Join AJIO</p></a>
+          <a href=""><p id="ru">Customer Care</p></a>
+          <button id="navbar-button">Visit AJIOLUXE</button>
+      </div>
+      <div id="right-lower">
+          <p id="rl">MEN</p>
+          <p id="rl">WOMEN</p>
+          <p id="rl">KIDS</p>
+          <p id="rl">INDIE</p>
+          <p id="rl">HOME AND KITCHEN</p>
+          <input id="navbar-input" type="text" placeholder="Search AJIO">
+          <img id="bar-img" src="https://i.pinimg.com/originals/fc/fa/0c/fcfa0c367d786deeaf42dec2fda70e47.png" alt="">
+          <img id="bar-img"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjHuCTCHiz7-sR9YwmlVHDZ0UXU-tcjDRIzmGlub9of64k0gsAJXe29kR-9Bpfj1f_YAg&usqp=CAU" alt="">
+      </div>
+  </div>
+</div>
+<!-- <div id="navbar-image">
+  <img id="navbar-img" src="https://assets.ajio.com/medias/sys_master/images/images/hd3/h34/47497754640414/16022022-D-Unisex-topstrip.jpg" alt="">
+</div> -->
+
+
+
+
+
+    <!-- <div id="words">
+      <div>Home</div>
+      <div>/</div>
+      <div>Men</div>
+    </div> -->
+
+    <div id="main_container">
+      <div class="left_container">
+        <div class="main_image"><img src="" alt="" /></div>
+      </div>
+
+      <div class="right_container">
+        <div class="right_content"></div>
+
+        <div id="main_box">
+          <p class="main_box1">Get it for ₹ 2499</p>
+          <p class="main_box2">
+            Get Up To Extra 30% Off on ₹1490 On Your First Purchase. Max
+            Discount Rs. 2000
+          </p>
+        </div><br>
+
+        <div class="more">
+          +7 More
+          <p>Select Size</p>
+        </div>
+
+      
+        <div class="sizes">
+          <div class="size_small">S</div>
+          <div>M</div>
+          <div>L</div>
+          <div>XL</div>
+          <div>XXL</div>
+        </div><br>
+
+        <div class="button">
+          <div class="location">
+            <p>Select your size to know your estimated delivery date.</p>
+          </div>
+
+          <button class="btn1">ADD TO BAG</button>
+          <h6>HANDPICKED STYLES | ASSURED QUALITY</h6>
+          <button class="btn2">SAVE TO CLOSET</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- FOOTER CONTENT -->
+ <footer class="footer">
+      <div class="row">
+          <div class="footer-col">
+              <h4>Ajio</h4>
+              <ul>
+                  <li><a href="#">Who We Are</a></li>
+                  <li><a href="#">Join Our Team</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">We Respect Your Privacy</a></li>
+                  <li><a href="#">Fees & Payments</a></li>
+                  <li><a href="#">Returns & Refunds Policy</a></li>
+                  <li><a href="#">Promotions Terms & Conditions</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>HELP</h4>
+              <ul>
+                  <li><a href="#">Track Your Order</a></li>
+                  <li><a href="#">Frequently Asked Questions</a></li>
+                  <li><a href="#">Returns</a></li>
+                  <li><a href="#">Cancellations</a></li>
+                  <li><a href="#">Payments</a></li>
+                  <li><a href="#">Customer Care</a></li>
+                  <li><a href="#">How Do I Redeem My Coupon</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-col">
+              <h4>Shop by</h4>
+              <ul>
+                  <li><a href="#">Men</a></li>
+                  <li><a href="#">Women</a></li>
+                  <li><a href="#">Kids</a></li>
+                  <li><a href="#">Indie</a></li>
+                  <li><a href="#">Stores</a></li>
+                  <li><a href="#">New Arrivals</a></li>
+                  <li><a href="#">Brand Directory</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Collections</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-col">
+              <h4>Follow us</h4>
+              <ul>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Instagram=AJIOlife</a></li>
+                  <li><a href="#">Instagram=AJIO LUXE</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Pinterest</a></li>
+              </ul>
+          </div>
+      </div>
+  </footer>
+
+  <!-- <hr /> -->
+
+  <div id="bottom-footer">
+
+      <div id="main">
+          <div>
+              <p>Payment Methods</p>
+          </div>
+          <div id="btm-left">
+              <p>Net Banking</p>
+              <p>Verified By Visa</p>
+              <p>Naster Card</p>
+              <p>CASH ON DELIVERY</p>
+              <p>Jio Money</p>
+          </div>
+      </div>
+      <div id="btm-right">
+          <p>Secure systems</p>
+          <p>256 BIT</p>
+      </div>
+
+      <div id="f-btns">
+          <button id="foot-btn">></button>
+          <button id="foot-btn1">...</button>
+          
+      </div>
+
+
+  </body>
+</html>
+
+<!-- <script>
+
+  var CartItemsOftarun = JSON.parse(localStorage.getItem("CartItemsOftarun"));
+
+  // var cartItemArr = [];
+
+
+
+var cartItemArr = JSON.parse(localStorage.getItem("CartItemArr")) || [];
+
+  CartItemsOftarun.map(function (item) {
+    document
+      .querySelector(".main_image>img")
+      .setAttribute("src", CartItemsOftarun[0].imageURL);
+
+
+    var brand1 = document.createElement("h3");
+    brand1.textContent = item.brand;
+
+    var category1 = document.createElement("div");
+    category1.textContent = item.category;
+
+    var gender1 = document.createElement("div");
+    gender1.textContent = item.gender;
+
+    var product1 = document.createElement("h3");
+    product1.textContent = item.product;
+
+    var price1 = document.createElement("h2");
+    price1.textContent = "₹"+ item.price;
+
+    var strikedOffPrice1 = document.createElement("h4");
+    strikedOffPrice1.textContent = "₹"+ item.strikedOffPrice;
+
+
+    document
+      .querySelector(".right_content")
+      .append(brand1, category1, gender1, product1, price1, strikedOffPrice1);
+
+
+
+
+  document.querySelector(".btn1").addEventListener("click", function () {
+   addToCart(item);
+  });
+});
+
+
+function addToCart(item) {
+  cartItemArr.push(item);
+  localStorage.setItem("cartItemArr", JSON.stringify(cartItemArr));
+  alert("Added to cart");
+   window.location.href = "cart.html";
+}
+
+
+
+// function onclickbtn(data) {
+//   cartItemArr.push(data);
+//     localStorage.setItem("cartItemArr", JSON.stringify(cartItemArr));
+//     alert("Added to cart");
+//   window.location.href = "cart.html";
+// }
+
+
+
+</script> -->
+
+
+
+
+
+
+
+
+
+
+<script>
+
+  var y = JSON.parse(localStorage.getItem("Allcartproduct"));
+  if(y==null){
+        ArrOfAllCartproduct=[];
+    }
+    else{
+        var ArrOfAllCartproduct=JSON.parse(localStorage.getItem("Allcartproduct"));
+}
+  // var cartItemArr = [];
+
+
+
+var cartItemArr = JSON.parse(localStorage.getItem("CartItemsOftarun"));
+
+cartItemArr.map(function (item) {
+    document
+      .querySelector(".main_image>img")
+      .setAttribute("src", cartItemArr[0].imageURL);
+
+
+    var brand1 = document.createElement("h3");
+    brand1.textContent = item.brand;
+
+    var category1 = document.createElement("div");
+    category1.textContent = item.category;
+
+    var gender1 = document.createElement("div");
+    gender1.textContent = item.gender;
+
+    var product1 = document.createElement("h3");
+    product1.textContent = item.product;
+
+    var price1 = document.createElement("h2");
+    price1.textContent = "₹"+ item.price;
+
+    var strikedOffPrice1 = document.createElement("h4");
+    strikedOffPrice1.textContent = "₹"+ item.strikedOffPrice;
+
+
+    document
+      .querySelector(".right_content")
+      .append(brand1, category1, gender1, product1, price1, strikedOffPrice1);
+
+
+
+
+  document.querySelector(".btn1").addEventListener("click", function () {
+    alert("Added to cart");
+    addToCart(item);
+   window.location.href = "cart.html";
+  });
+});
+
+
+function addToCart(item) {
+  ArrOfAllCartproduct.push(item);
+  localStorage.setItem("Allcartproduct", JSON.stringify(ArrOfAllCartproduct));
+  
+}
+
+
+
+// function onclickbtn(data) {
+//   cartItemArr.push(data);
+//     localStorage.setItem("cartItemArr", JSON.stringify(cartItemArr));
+//     alert("Added to cart");
+//   window.location.href = "cart.html";
+// }
+
+
+
+</script>
