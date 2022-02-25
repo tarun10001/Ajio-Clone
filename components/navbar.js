@@ -3,7 +3,7 @@ function navbar()
 {
     return `<div id="navbar">
     <div id="navbar-left">
-        <img id="site-logo" src="https://assets.ajio.com/static/img/Ajio-Logo.svg" alt="">
+        <img id="site-logo" src="https://assets.ajio.com/static/img/Ajio-Logo.svg" onclick="window.location.href = 'home.html'" alt="">
     </div>
     <div id="navbar-right">
         <div id="right-upper">
