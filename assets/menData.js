@@ -246,3 +246,27 @@ let menData = [
 
 //Writing Mens Data to LocalStorage
 localStorage.setItem("mensData",JSON.stringify(menData));
+
+
+
+var x=JSON.parse(localStorage.getItem("CartItemsOftarun"));
+  if(x==null){
+    cartArrFF=[];
+  }
+  else{
+    var cartArrFF=JSON.parse(localStorage.getItem("CartItemsOftarun"))
+  }
+
+
+// On Click function
+function addToCart(item) {
+
+    if(cartArrFF.length==1){
+        cartArrFF.pop();
+      }
+      cartArrFF.push(item);
+
+    localStorage.setItem("CartItemsOftarun",JSON.stringify(cartArrFF));
+
+window.location.href = "clickedproduct.html";
+}
