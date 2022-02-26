@@ -1,62 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="otp.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="otp_new.css" />
     <title>Document</title>
-    
-</head>
-<body>
+  </head>
+  <body>
     <div id="main-sign">
-    <div id="sign-div">
+      <div id="sign-div">
         <div id="button-div">
-           <a href="signup.html"><p id="back-btn"> Back </p></a>
-            <button id="sign-button">&times;</button>
+          <a href="signup.html"><p id="back-btn">Back</p></a>
+          <button id="sign-button">&times;</button>
         </div>
-        
+
         <div>
-        <div>
+          <div>
             <h1 id="verify">Number Verification</h1>
-            
-        </div>
-        <div id="main-logo-div">
-            <div><p id="join">Please enter OTP sent to</p>
-            <p id="otp">7249840809</p>
-        </div>
+          </div>
+          <div id="main-logo-div">
+            <div>
+              <p id="join">Please enter OTP sent to</p>
+              <p id="otp">7249840809</p>
             </div>
+          </div>
         </div>
         <div id="main-email">
-            <input id="search" type="text" placeholder="Enter OTP">
+          <input id="search" type="text" placeholder="Enter OTP" />
         </div>
         <div>
-            <button onclick="home()" id="continue-btn">START SHOPPING</button>
+          <button onclick="home()" id="continue-btn">START SHOPPING</button>
         </div>
-   
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>
 <script>
-    function home(){
-        window.location.href="home.html";
-    }
+  function home() {
+    window.location.href = "home.html";
+  }
 
+  let num = JSON.parse(localStorage.getItem("num_local"));
 
-    let num = JSON.parse(localStorage.getItem("num_local"));
-    
-    console.log(num);
+  console.log(num);
 
+  num.forEach(function (el) {
+    console.log(el);
+    console.log(el.number);
 
-    num.forEach(function(el){
-        
-        console.log(el);
-        console.log(el.number);
-
-        let p_tag = document.getElementById("otp");
-    p_tag.innerText = el.number ; 
-    })
-
+    let p_tag = document.getElementById("otp");
+    p_tag.innerText = el.number;
+  });
 </script>
-
