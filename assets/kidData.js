@@ -297,7 +297,7 @@ let kidData = [
     },
 ];
 
-// Writing Womens Data to Local Storage
+// Writing Womens Data to Local storage
 localStorage.setItem("kidsData", JSON.stringify(kidData));
 
 
