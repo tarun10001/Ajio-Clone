@@ -256,6 +256,10 @@
         background-color: rgb(47,66,84);
         color: white;
     }
+    h5 {
+      color: grey;
+      margin-top: -3%;
+    }
 
 
 
@@ -592,81 +596,6 @@ ul {
   </body>
 </html>
 
-<!-- <script>
-
-  var CartItemsOftarun = JSON.parse(localStorage.getItem("CartItemsOftarun"));
-
-  // var cartItemArr = [];
-
-
-
-var cartItemArr = JSON.parse(localStorage.getItem("CartItemArr")) || [];
-
-  CartItemsOftarun.map(function (item) {
-    document
-      .querySelector(".main_image>img")
-      .setAttribute("src", CartItemsOftarun[0].imageURL);
-
-
-    var brand1 = document.createElement("h3");
-    brand1.textContent = item.brand;
-
-    var category1 = document.createElement("div");
-    category1.textContent = item.category;
-
-    var gender1 = document.createElement("div");
-    gender1.textContent = item.gender;
-
-    var product1 = document.createElement("h3");
-    product1.textContent = item.product;
-
-    var price1 = document.createElement("h2");
-    price1.textContent = "₹"+ item.price;
-
-    var strikedOffPrice1 = document.createElement("h4");
-    strikedOffPrice1.textContent = "₹"+ item.strikedOffPrice;
-
-
-    document
-      .querySelector(".right_content")
-      .append(brand1, category1, gender1, product1, price1, strikedOffPrice1);
-
-
-
-
-  document.querySelector(".btn1").addEventListener("click", function () {
-   addToCart(item);
-  });
-});
-
-
-function addToCart(item) {
-  cartItemArr.push(item);
-  localStorage.setItem("cartItemArr", JSON.stringify(cartItemArr));
-  alert("Added to cart");
-   window.location.href = "cart.html";
-}
-
-
-
-// function onclickbtn(data) {
-//   cartItemArr.push(data);
-//     localStorage.setItem("cartItemArr", JSON.stringify(cartItemArr));
-//     alert("Added to cart");
-//   window.location.href = "cart.html";
-// }
-
-
-
-</script> -->
-
-
-
-
-
-
-
-
 
 
 <script>
@@ -706,12 +635,15 @@ cartItemArr.map(function (item) {
     price1.textContent = "₹"+ item.price;
 
     var strikedOffPrice1 = document.createElement("h4");
-    strikedOffPrice1.textContent = "₹"+ item.strikedOffPrice;
+    strikedOffPrice1.textContent = "MRP" + " " + "₹"+ item.strikedOffPrice;
+
+    var priceincl = document.createElement("h5");
+    priceincl.textContent = "Price inclusive of all taxes";
 
 
     document
       .querySelector(".right_content")
-      .append(brand1, category1, gender1, product1, price1, strikedOffPrice1);
+      .append(brand1, category1, gender1, product1, price1, strikedOffPrice1,priceincl);
 
 
 
