@@ -1,2 +1,2 @@
 # Ajio-Clone
-Ajio Clone done during Unit-3 Construct Week of Masai School
+We were a team of 4 from the Masai Web-15 batch who worked on cloning the Ajio website as part of our Unit-3 construct week. As a team, we were given a project to clone the Ajio.com website.
