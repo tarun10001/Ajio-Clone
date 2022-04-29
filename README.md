@@ -13,10 +13,8 @@ Celebrating fearlessness and uniqueness, Ajio is constantly looking to bring a f
 1. HTML5
 2. CSS3
 3. Advanced JavaScript
-4. API’s
-5. ES6
-6. Json Server
-7. Bootstrap
+4. ES6
+5. Bootstrap
 
 # Features
 1. You will get Men, Women, and Kids related products.
